@@ -1,0 +1,39 @@
+body {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+p.center_align {
+    text-align: center;
+    font-size: 53px;
+    color: #fff;
+}
+
+
+
+.register-page h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+.register-page form {
+    max-width: 672px;
+    margin: 0 auto;
+}
+
+.register-page form input {
+    height: 49px !important;
+}
+
+.register-page label {
+    color: lightgrey;
+}
+
+.register-page div p {
+    color: #f44336;
+}
+
+.register-page input[type="submit"] {
+    width: 146px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
