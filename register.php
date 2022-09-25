@@ -7,11 +7,11 @@ $m = null;
 
 //$sql = "INSERT INTO users_info `u_name` VALUES `SAKIB`";
 
-$sql = "INSERT INTO test(f_name) VALUES('Sakib')";
+//$sql = "INSERT INTO users_info(fname,uname,u_email,u_password) VALUES('Sakib','sakib1','sakib@yahoo.com','123')";
 
-$insert_query = mysqli_query($conn, $sql);
+//$insert_query = mysqli_query($conn, $sql);
 
-$result = $conn->query($sql);
+//$result = $conn->query($sql);
 // if(!$result) {
 //     die("ERROR: Could not connect. " . mysqli_connect_error());
 //     throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
@@ -21,9 +21,9 @@ $result = $conn->query($sql);
 
 //$sql = "INSERT INTO user_info (name, u_name, email, password) VALUES ('value1', 'value2', 'value3', 'test')";
 
-if($conn->query($sql)===true){
+/* if($conn->query($sql)===true){
 
-}
+} */
 
 //die();
 
@@ -47,20 +47,21 @@ if (isset($_POST['submit'])) {
 
     if ($password === $rpt_password) {
 
-        $user_qry = "INSERT INTO users_info(name, u_name, email, password) VALUES('$name', '$uname', '$email', '$password')";
+        //$user_qry = "INSERT INTO users_info(fname, u_name) VALUES('$name', '$uname')";
+        $user_qry = "INSERT INTO users_info(fname,uname,u_email,u_password) VALUES('$name', '$uname','$email','$password')";
 
 
         //$sql = "INSERT INTO user_info (name, u_name, email, password) VALUES ('value1', 'value2', 'value3', 'test')";
 
-        $insert_query = mysqli_query($conn, $user_qry);
+        //$insert_query = mysqli_query($conn, $user_qry);
 
-        $result = $conn->query($user_qry);
+        /* $result = $conn->query($user_qry);
         if(!$result) {
             die("ERROR: Could not connect. " . mysqli_connect_error());
             throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
-        }
+        } */
 
-        if($conn->query($sq)===true){
+        if($conn->query($user_qry)===true){
             header('Location: login.php');
         }else{
             $m = "Connection not established!";
