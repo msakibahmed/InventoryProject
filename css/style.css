@@ -1,6 +1,11 @@
 body {
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
 p.center_align {
     text-align: center;
     font-size: 53px;
@@ -9,30 +14,30 @@ p.center_align {
 
 
 
-.register-page h1 {
+.login-page h1 {
     font-size: 36px;
     text-align: center;
     color: #fff;
 }
 
-.register-page form {
+.login-page form {
     max-width: 672px;
     margin: 0 auto;
 }
 
-.register-page form input {
+.login-page form input {
     height: 49px !important;
 }
 
-.register-page label {
+.login-page label {
     color: lightgrey;
 }
 
-.register-page div p {
+.login-page div p {
     color: #f44336;
 }
 
-.register-page input[type="submit"] {
+.login-page input[type="submit"] {
     width: 146px;
     text-transform: uppercase;
     font-weight: 600;

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #282828;
+    color: #d0d0d0;
+}
+
+.form-group.password-field {
+    position: relative;
+}
+
+i#hide-1 {
+    display: none;
+}
+
+span.eye {
+    position: absolute;
+    right: 0;
+    top: 57%;
+    right: 13px;
+}
+
+span.eye i {
+    color: gray;
+}
+
+
+p.center_align {
+    text-align: center;
+    font-size: 53px;
+    color: #fff;
+}
+
+
+
+.register-page h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+.register-page form {
+    max-width: 672px;
+    margin: 0 auto;
+}
+
+.register-page form input {
+    height: 49px !important;
+}
+
+.register-page label {
+    color: lightgrey;
+}
+
+.register-page div p {
+    color: #f44336;
+}
+
+.register-page input[type="submit"] {
+    width: 146px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
